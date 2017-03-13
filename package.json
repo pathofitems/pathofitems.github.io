@@ -1,0 +1,82 @@
+{
+  "name": "grimdawn-vue",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "Morten Lindhardt <r3fuze@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.2.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.27.3",
+    "file-loader": "^0.10.1",
+    "jquery": "^3.1.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "semantic-ui-css": "^2.2.9",
+    "style-loader": "^0.13.2",
+    "vue": "^2.2.4",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.4",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0",
+    "xo": "^0.17.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "safari >= 7"
+            ]
+          },
+          "modules": false
+        }
+      ]
+    ]
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 4,
+    "globals": [
+      "window",
+      "$",
+      "jQuery"
+    ],
+    "rules": {
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "dot-notation": "off",
+      "spaced-comment": "off",
+      "max-depth": "off",
+      "object-curly-spacing": "off",
+      "no-unused-expressions": "off",
+      "no-else-return": "off",
+      "no-warning-comments": "off",
+      "no-unused-vars": "off",
+      "guard-for-in": "off",
+      "quote-props": "off",
+      "curly": "off",
+      "operator-linebreak": "off",
+      "no-implicit-coercion": "off",
+      "import/no-unassigned-import": "off",
+      "import/no-unresolved": "off",
+      "import/order": "off",
+      "import/prefer-default-export": "off",
+      "import/default": "off",
+      "ava/no-todo-test": "off",
+      "ava/no-skip-test": "off"
+    }
+  }
+}
